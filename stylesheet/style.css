@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Libre+Baskerville&family=Playfair+Display&display=swap');
+
+
+* {
+  font-family: "Alkalami", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 225, 180);
+  color: rgb(41, 35, 23);
+  transition: 0.2s;
+}
+
+body.dark {
+  background-color: rgb(41, 35, 23);
+  color: rgb(247, 225, 180);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  background-color: rgb(41, 35, 23);
+}
+
+.about-me {
+  padding: 30px;
+  background-color: rgb(247, 225, 180);
+  color: rgb(41, 35, 23);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+
+nav {
+  background-color: rgb(41, 35, 23);
+  position: sticky;
+  top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+.nav-item {
+  display: flex;
+  text-align: center;
+  padding-left: 190px;
+}
+
+.nav-item a {
+  color: rgb(247, 225, 180);
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  transform: scale(1.2);
+}
+
+.main-contents {
+  height: 1448px;
+  font-size: 20px;
+}
+
+.judul-am {
+  padding: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-am{
+  display: none;
+  text-align: center;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+
+.label {
+  margin: 30px 20px;
+  width: 55px;
+  height: 30px;
+  background-color: rgb(41, 35, 23);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 70px;
+  padding: 5px;
+  transition: 0.25s linear;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(247, 225, 180);
+  position: flex;
+  right: 30px;
+  align-items: center;
+  border-radius: 50px;
+  transition: 0.25s linear;
+}
+
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+  background-color: rgb(41, 35, 23);
+}
+
+.checkbox:checked+.label {
+  background-color: rgb(247, 225, 180);
+}
+
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  width: 90%;
+}
+
+.about-text p {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+}
+
+.section img {
+  padding-top: 60px;
+  height: 320px;
+}
+
+.section h3 a {
+  text-decoration: none;
+}
+
+.gameplay-text h3 {
+  padding-left: 100px;
+}
+
+.gameplay-text p {
+  font-weight: bolder;
+  font-size: 19px;
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  width: 90%;
+}
+
+.gameplay-text img {
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 20%;
+  padding-top: 40px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+
+.btn-font {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.btn-font .btn-font-size {
+  padding: 0 10px;
+  display: inline-flex;
+  background-color: rgb(41, 35, 23);
+  color: rgb(247, 225, 180);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-font .btn-font-size .btn-font-size.light {
+  padding: 0 10px;
+  display: inline-flex;
+  background-color: rgb(247, 225, 180);
+  color: rgb(41, 35, 23);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-font .btn-font-size:nth-child(2) {
+  font-size: 1.5em;
+}
+
+.btn-font .btn-font-size:nth-child(3) {
+  font-size: 2em;
+}
+
+.section {
+  transition: 0.7s;
+}

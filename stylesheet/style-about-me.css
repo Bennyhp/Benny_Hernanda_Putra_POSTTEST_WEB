@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+
+* {
+    font-family: "Alkalami", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(247, 225, 180);
+
+}
+
+.judul {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    background-color: rgb(41, 35, 23);
+}
+
+
+nav {
+    background-color: rgb(41, 35, 23);
+    position: sticky;
+    top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-link {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+.nav-item {
+    display: flex;
+    text-align: center;
+    padding: 0.5% 7.5%;
+
+}
+
+.nav-item a {
+    color: rgb(247, 225, 180);
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    transform: scale(1.2);
+}
+
+
+.main-contents p {
+    text-align: center;
+}
