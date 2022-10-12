@@ -60,7 +60,7 @@ nav li {
 .nav-item {
     display: flex;
     text-align: center;
-    padding-left: 190px;
+    padding-left: 160px;
 }
 
 .nav-item a {
@@ -183,7 +183,7 @@ footer {
 .btn-font {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
 }
 
@@ -219,7 +219,14 @@ footer {
 
 .nama-user {
     display: flex;
-    align-items: flex-start;
+    font-size: 20px;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.login-btn {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    margin-right: 20px;
 }

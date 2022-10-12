@@ -26,6 +26,7 @@ session_start();
       <li class="nav-item"><a href="#">Equipments</a></li>
       <li class="nav-item"><a href="#">Characters</a></li>
       <li class="nav-item"><a href="#">Bosses</a></li>
+      <li class="nav-item"><a href="form_login.php">Login</a></li>
     </ul>
   </nav>
   <div class="nama-user">
@@ -39,7 +40,6 @@ session_start();
       ?>
     </p>
   </div>
-  <div><a href="form_login.php">Login</a></div>
   <div class="main-contents" id="main-contents">
     <input type="checkbox" class="checkbox" id="checkbox">
     <label for="checkbox" class="label">
