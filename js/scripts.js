@@ -1,19 +1,5 @@
-const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-});
-
-
-let text;
-let nama = prompt('Masukkan Nama Terlebih Dahulu: ');
-if (nama == null || nama == "") {
-    text = alert("User tidak memasukkan nama :(");
-} else {
-    text = alert("Hello " + nama + " Selamat Datang!");
-}
-
-function btnHilang(){
+function btnHilang() {
     const y = document.getElementById('main-contents');
     const x = document.getElementById('judul-am');
     const z = document.getElementById('content-am');
@@ -27,4 +13,11 @@ function btnHilang(){
         z.style.display = "block";
     }
 }
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+});
+
 

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Posttest 4</title>
-  <link rel="stylesheet" href="stylesheet/style.css" />
+  <link rel="stylesheet" href="stylesheet/style-index.css" />
 </head>
 
 <body id="id-body">
@@ -17,13 +21,25 @@
   </a>
   <nav>
     <ul class="nav-link">
-      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item"><a href="index.php">Home</a></li>
       <li class="nav-item"><a href="#">General</a></li>
       <li class="nav-item"><a href="#">Equipments</a></li>
       <li class="nav-item"><a href="#">Characters</a></li>
       <li class="nav-item"><a href="#">Bosses</a></li>
     </ul>
   </nav>
+  <div class="nama-user">
+    <p>
+      <?php
+      if ($_POST['regisUsername'] = null) {
+        $_POST['regisUsername'] = "Guest";
+      } else {
+        echo $_SESSION['regisUsername'];
+      }
+      ?>
+    </p>
+  </div>
+  <div><a href="form_login.php">Login</a></div>
   <div class="main-contents" id="main-contents">
     <input type="checkbox" class="checkbox" id="checkbox">
     <label for="checkbox" class="label">
@@ -69,13 +85,13 @@
   </div>
   <div class="judul-am" id="judul-am">
     <h1>About Me</h1>
-</div>
-<div class="content-am" id="content-am">
+  </div>
+  <div class="content-am" id="content-am">
     <p>Nama saya Benny Hernanda Putra, saya mahasiswa Informatika Universitas Mulawarman angkatan 2020. <br>Ini
-        adalah Posttest untuk praktikum mata kuliah Pemrograman Web<br>Saya membuat website ini karena saya
-        terobsesi dengan game Sekiro Shadow Die Twice oleh karena itu saya terinspirasi untuk membuat website ini
+      adalah Posttest untuk praktikum mata kuliah Pemrograman Web<br>Saya membuat website ini karena saya
+      terobsesi dengan game Sekiro Shadow Die Twice oleh karena itu saya terinspirasi untuk membuat website ini
     </p>
-</div>
+  </div>
 
 
   <footer>
@@ -86,7 +102,7 @@
       </p>
     </a>
   </footer>
-  <script src="js/javascripts.js"></script>
+  <script src="js/scripts.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
