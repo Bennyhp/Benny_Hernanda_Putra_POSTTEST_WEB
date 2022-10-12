@@ -31,6 +31,7 @@ session_start();
   </nav>
   <div class="nama-user">
     <p>
+      Hallo Selamat Datang 
       <?php
       if ($_POST['regisUsername'] = null) {
         $_POST['regisUsername'] = "Guest";

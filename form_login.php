@@ -14,22 +14,24 @@ if (isset($_POST['regisSubmit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet/style-form.css" />
+    <link rel="stylesheet" href="stylesheet/forms-style.css">
     <title>Login</title>
 </head>
 
 <body>
     <h1>LOGIN</h1>
-    <div class="form_login">
-        <form action="" method="get">
-            <label for="username">Username</label><br>
-            <input type="text" name="username" id="username"><br><br>
+    <div>
+        <div class="form_login">
+            <form action="" method="get">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username"><br><br>
 
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password"><br><br>
 
-            <input type="submit" name="loginSubmit" value="submit">
-        </form>
+                <input type="submit" name="loginSubmit" value="submit">
+            </form>
+        </div>
     </div>
     <?php
     if (isset($_GET['loginSubmit']) && isset($_SESSION['regisSubmit'])) {
@@ -41,7 +43,7 @@ if (isset($_POST['regisSubmit'])) {
     }
     ?>
     <div>
-        <p>Belum Punya Akun? <a href="form_register.php">Register</a></p>
+        <p>Belum Punya Akun? <a href="form_regis.php">Register</a></p>
     </div>
 </body>
 
